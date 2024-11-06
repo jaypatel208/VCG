@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "156408136142",
+    "project_id": "v-c-g-f6d61",
+    "storage_bucket": "v-c-g-f6d61.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156408136142:android:7d6606af58d3379b2f2b9f",
+        "android_client_info": {
+          "package_name": "dev.jay.visitingcardgenerator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBtB_oGwqst3Bhom6z6jtP-Qkgi1Bqwlc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

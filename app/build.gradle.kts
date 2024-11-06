@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.services)
 }
 
 android {
@@ -14,6 +15,10 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    viewBinding {
+        enable = true
     }
 
     buildTypes {
@@ -32,11 +37,24 @@ android {
 }
 
 dependencies {
-
+    // Core Android dependencies
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+
+    // Firebase Authentication
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth)
+
+    // Navigation Component
+    implementation(libs.navigation.ui)
+    implementation(libs.navigation.fragment)
+
+    // Material
+    implementation(libs.material)
+
+    // Testing dependencies
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
