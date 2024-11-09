@@ -58,4 +58,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // Razor pay sdk
+    implementation (libs.checkout)
 }
